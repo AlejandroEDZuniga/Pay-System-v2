@@ -1,0 +1,44 @@
+// Here you can add other styles
+.cardImage {
+    display: flex !important;
+    justify-content: center !important;
+    
+}
+.card{
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.scroll-auto{
+    -webkit-overflow-scrolling:auto
+}
+.transaccionesBody{
+    background-color: rgba(44, 56, 74, 0.95);
+}
+.items{
+    color:white !important
+}
+
+.divCont {
+    padding-bottom: 200px;
+}
+.userDetails{
+    padding-bottom: 200px;
+}
+.qrContainer{
+    padding-bottom: 200px;
+
+}
+.aprobaciones{
+    padding-bottom: 200px;
+}
+.sidebarContainer{
+    padding-bottom: 400px;
+}
+.contable{
+    padding-bottom: 200px;
+}
+.dash{
+    padding-bottom: 200px;
+}
