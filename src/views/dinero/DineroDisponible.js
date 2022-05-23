@@ -1,14 +1,14 @@
 import React from "react";
 import { CCard, CCardBody, CCardTitle, CCardSubtitle, CRow, CCardLink, CCardText } from "@coreui/react";
-
+import { useSelector } from "react-redux";
 const DineroDisponible = () => {
-  const random = () => Math.round(Math.random() * 100);
+  const money = useSelector((state) => state.money);
 
   return (
     <CRow>
       <CCard style={{ width: "18rem" }}>
         <CCardBody>
-          <CCardTitle>$1000</CCardTitle>
+          <CCardTitle>${money}</CCardTitle>
           <CCardSubtitle className="mb-2 text-medium-emphasis">
             Dinero disponible
           </CCardSubtitle>

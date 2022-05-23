@@ -16,6 +16,7 @@ import CIcon from '@coreui/icons-react'
 import { cilLockLocked, cilUser } from '@coreui/icons'
 
 const Register = () => {
+  
   return (
       <CContainer>
         <CRow className="justify-content-center">

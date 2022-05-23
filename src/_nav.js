@@ -47,6 +47,12 @@ const _nav = [
   },
   {
     component: CNavItem,
+    name: 'Escanear QR',
+    to: '/dinero',
+    icon: <CIcon icon={cilQrCode} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
     name: 'Dinero disponible',
     to: '/dinero',
     icon: <CIcon icon={cilCash} customClassName="nav-icon" />,

@@ -1,4 +1,6 @@
 import React from "react";
+import { useSelector, useDispatch } from "react-redux";
+
 import { CCard, CCardBody, CCardImage, CCardTitle, CRow, CCardText, CButton } from "@coreui/react";
 import {
   CChartBar,
@@ -9,20 +11,21 @@ import {
   CChartRadar,
 } from "@coreui/react-chartjs";
 // import { DocsCallout } from "../components";
-import imagen from "../../assets/images/Example-QR-code.jpeg";
+import imagen from "../../assets/images/QR.jpeg";
 
 const DatosDeUsuario = () => {
-  const random = () => Math.round(Math.random() * 100);
+  // const [money, setMoney] = useState("money")
+  const money = useSelector((state) => state.money);
+  console.log("mone", money)
 
   return (
     <CRow className="userDetails">
       <CCard style={{ width: "18rem" }}>
         <CCardImage orientation="top" src={imagen} />
         <CCardBody>
-          <CCardTitle>Nombre de Usuario</CCardTitle>
+          <CCardTitle>Alejandro Zuniga</CCardTitle>
           <CCardText>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            Dinero disponible: $ {money}
           </CCardText>
           <CButton href="/#/carga">Cargar dinero</CButton>
         </CCardBody>
